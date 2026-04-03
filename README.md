@@ -1,11 +1,11 @@
-# 🌧️ Indian Monsoon Rainfall Forecasting (1951–2024)
+# Indian Monsoon Rainfall Forecasting (1951–2024)
 ### Multivariate CNN-LSTM Hybrid Architecture on IMD Gridded Data
 
 This project implements a high-precision deep learning pipeline to forecast daily rainfall in Kerala, India. By fusing 74 years of historical temperature and precipitation data, the model captures the complex thermal gradients that drive the Indian Summer Monsoon (ISM).
 
 ---
 
-## 🚀 Key Highlights (Proof of Work)
+## Key Highlights (Proof of Work)
 * **Data Scale:** Processed **9GB** of raw IMD binary data spanning **27,000+ days**.
 * **Architecture:** Hybrid **Conv1D + LSTM** network.
 * **Accuracy:** Achieved a Validation **MAE of 2.67 mm** and **RMSE of 4.28 mm**.
@@ -13,7 +13,7 @@ This project implements a high-precision deep learning pipeline to forecast dail
 
 ---
 
-## 🛠️ Technical Implementation
+## Technical Implementation
 
 ### 1. Data Engineering & Spatial Alignment
 The primary challenge involved aligning multi-resolution datasets:
