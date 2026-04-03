@@ -7,7 +7,7 @@ This project implements a high-precision deep learning pipeline to forecast dail
 
 ## 🚀 Key Highlights (Proof of Work)
 * **Data Scale:** Processed **9GB** of raw IMD binary data spanning **27,000+ days**.
-* **Architecture:** Hybrid **Conv1D + LSTM** network optimized for the **T4 GPU**.
+* **Architecture:** Hybrid **Conv1D + LSTM** network.
 * **Accuracy:** Achieved a Validation **MAE of 2.67 mm** and **RMSE of 4.28 mm**.
 * **Validation:** Model performance was benchmarked against **Official 2024 IMD Monsoon Onset Dates**, successfully capturing pre-monsoon surges.
 
