@@ -1,4 +1,4 @@
-# PrecisionRain: Spatial-Temporal Precipitation Forecasting 🌧️
+# PrecisionRain: Spatial-Temporal Precipitation Forecasting 
 
 ## Overview
 PrecisionRain is a deep learning framework designed to forecast monthly precipitation levels using spatial-temporal meteorological data. The system models complex weather patterns by combining robust data processing pipelines with a hybrid CNN-LSTM neural network architecture. 
