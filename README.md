@@ -1,9 +1,11 @@
 # PrecisionRain: Spatial-Temporal Precipitation Forecasting 🌧️
 
 ## Overview
-PrecisionRain is an enterprise-scale machine learning pipeline designed to forecast monthly precipitation levels using spatial-temporal meteorological data. Focused on the Rajasthan region—chosen because its stark gradient from arid desert to sub-humid zones makes it a highly challenging and ideal environment for evaluating spatial-temporal anomaly detection and forecasting models—this system models complex weather patterns through robust data engineering, a CNN-LSTM neural network architecture, and comprehensive AI quality evaluation.
+PrecisionRain is a deep learning framework designed to forecast monthly precipitation levels using spatial-temporal meteorological data. The system models complex weather patterns by combining robust data processing pipelines with a hybrid CNN-LSTM neural network architecture. 
 
-This project demonstrates core competencies in **AI Model Evaluation**, **Data Pipeline Orchestration**, and **MLOps**, aligning with the rigorous demands of production-grade AI systems. 
+The evaluation is focused on the Rajasthan region, chosen because its stark gradient from arid desert to sub-humid zones provides a highly challenging and ideal environment for testing the model's accuracy and robustness across diverse climatic conditions. 
+
+This project emphasizes end-to-end model development, from processing large-scale geospatial datasets to rigorous performance tracking and visualization.
 
 ## Results & Visualizations
 Embedding your visualizations directly in the documentation provides immediate validation of the model's performance to anyone reviewing the repository.
