@@ -10,6 +10,12 @@ This project emphasizes end-to-end model development, from processing large-scal
 ## Results & Visualizations
 Embedding your visualizations directly in the documentation provides immediate validation of the model's performance to anyone reviewing the repository.
 
+### Spatial Drift Monitoring (MAE & RMSE)
+![Spatial Heatmaps](images/spatial_heatmaps.png)
+
+### Temporal Trend Validation
+![Line Plots](images/temporal_trends.png)
+
 ### Quantitative Evaluation
 **1. Regional Monsoon Forecasting Performance (Scaled Metrics)**
 The CNN-LSTM model was rigorously evaluated across four distinct geographic coordinate zones representing the stark climatological diversity of Rajasthan.
@@ -30,12 +36,6 @@ Aggregated performance tracking across all operational grids.
 | **July** | 13,104 | 2.3683 | 3.3940 |
 | **August** | 13,104 | 2.4494 | 3.3905 |
 | **September**| 13,104 | 1.7149 | 2.6352 |
-
-### Spatial Drift Monitoring (MAE & RMSE)
-![Spatial Heatmaps](images/spatial_heatmaps.png)
-
-### Temporal Trend Validation
-![Line Plots](images/temporal_trends.png)
 
 ## Key Features & Architecture
 - **Vectorized Data Pipelines:** Engineered high-performance, fault-tolerant ingestion pipelines for large-scale NetCDF datasets utilizing `xarray` and `dask` for distributed chunking.
