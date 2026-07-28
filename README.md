@@ -5,6 +5,36 @@ PrecisionRain is an enterprise-scale machine learning pipeline designed to forec
 
 This project demonstrates core competencies in **AI Model Evaluation**, **Data Pipeline Orchestration**, and **MLOps**, aligning with the rigorous demands of production-grade AI systems. 
 
+## Results & Visualizations
+Embedding your visualizations directly in the documentation provides immediate validation of the model's performance to anyone reviewing the repository.
+
+### Quantitative Evaluation
+**1. Regional Monsoon Forecasting Performance (Scaled Metrics)**
+The CNN-LSTM model was rigorously evaluated across four distinct geographic coordinate zones representing the stark climatological diversity of Rajasthan.
+
+| Geographic Zone | Target Coordinates | June (MAE / RMSE) | July (MAE / RMSE) | August (MAE / RMSE) | September (MAE / RMSE) |
+|:---|:---|:---:|:---:|:---:|:---:|
+| **North-West Desert** | 29°00'N 73°00'E | 0.7626 / 1.0381 | 1.4644 / 1.9026 | 1.6116 / 1.9294 | 1.1564 / 1.7826 |
+| **Central Aravalli Hill** | 26°00'N 74°50'E | 1.0964 / 1.5918 | 2.9588 / 3.5668 | 2.1056 / 2.6489 | 1.7087 / 2.0427 |
+| **Eastern Plain** | 26°50'N 75°00'E | 1.2258 / 1.5332 | 3.4422 / 4.3144 | 2.9036 / 3.8176 | 1.3978 / 1.7432 |
+| **South-Eastern Plateau** | 25°25'N 75°50'E | 1.3143 / 1.7798 | 2.9669 / 3.8248 | 3.4997 / 4.2339 | 2.5602 / 3.0543 |
+
+**2. Overall Month-Wise Observability (All Regions Combined)**
+Aggregated performance tracking across all operational grids.
+
+| Month | Data Points Evaluated | MAE (Scaled) | RMSE (Scaled) |
+|:---|:---:|:---:|:---:|
+| **June** | 13,104 | 1.1240 | 1.6825 |
+| **July** | 13,104 | 2.3683 | 3.3940 |
+| **August** | 13,104 | 2.4494 | 3.3905 |
+| **September**| 13,104 | 1.7149 | 2.6352 |
+
+### Spatial Drift Monitoring (MAE & RMSE)
+![Spatial Heatmaps](images/spatial_heatmaps.png)
+
+### Temporal Trend Validation
+![Line Plots](images/temporal_trends.png)
+
 ## Key Features & Architecture
 - **Vectorized Data Pipelines:** Engineered high-performance, fault-tolerant ingestion pipelines for large-scale NetCDF datasets utilizing `xarray` and `dask` for distributed chunking.
 - **CNN-LSTM Architecture:** Designed a modular Deep Learning architecture combining 1D Convolutional Neural Networks (CNNs) for spatial-temporal feature extraction with Long Short-Term Memory (LSTM) layers for capturing long-term sequential dependencies and nonlinear climatological relationships.
@@ -87,36 +117,6 @@ Generate artifacts for drift monitoring and performance evaluation:
 python src/visualize_spatial.py
 python src/visualize_temporal.py
 ```
-
-## Results & Visualizations
-Embedding your visualizations directly in the documentation provides immediate validation of the model's performance to anyone reviewing the repository.
-
-### Quantitative Evaluation
-**1. Regional Monsoon Forecasting Performance (Scaled Metrics)**
-The CNN-LSTM model was rigorously evaluated across four distinct geographic coordinate zones representing the stark climatological diversity of Rajasthan.
-
-| Geographic Zone | Target Coordinates | June (MAE / RMSE) | July (MAE / RMSE) | August (MAE / RMSE) | September (MAE / RMSE) |
-|:---|:---|:---:|:---:|:---:|:---:|
-| **North-West Desert** | 29°00'N 73°00'E | 0.7626 / 1.0381 | 1.4644 / 1.9026 | 1.6116 / 1.9294 | 1.1564 / 1.7826 |
-| **Central Aravalli Hill** | 26°00'N 74°50'E | 1.0964 / 1.5918 | 2.9588 / 3.5668 | 2.1056 / 2.6489 | 1.7087 / 2.0427 |
-| **Eastern Plain** | 26°50'N 75°00'E | 1.2258 / 1.5332 | 3.4422 / 4.3144 | 2.9036 / 3.8176 | 1.3978 / 1.7432 |
-| **South-Eastern Plateau** | 25°25'N 75°50'E | 1.3143 / 1.7798 | 2.9669 / 3.8248 | 3.4997 / 4.2339 | 2.5602 / 3.0543 |
-
-**2. Overall Month-Wise Observability (All Regions Combined)**
-Aggregated performance tracking across all operational grids.
-
-| Month | Data Points Evaluated | MAE (Scaled) | RMSE (Scaled) |
-|:---|:---:|:---:|:---:|
-| **June** | 13,104 | 1.1240 | 1.6825 |
-| **July** | 13,104 | 2.3683 | 3.3940 |
-| **August** | 13,104 | 2.4494 | 3.3905 |
-| **September**| 13,104 | 1.7149 | 2.6352 |
-
-### Spatial Drift Monitoring (MAE & RMSE)
-![Spatial Heatmaps](images/spatial_heatmaps.png)
-
-### Temporal Trend Validation
-![Line Plots](images/temporal_trends.png)
 
 ## License
 MIT License
