@@ -1,0 +1,30 @@
+# Datasets and Shapefiles
+data/
+*.nc
+*.shp
+*.dbf
+*.shx
+*.prj
+*.cpg
+
+# Saved Models and Weights
+*.keras
+*.h5
+*.hdf5
+*.pt
+*.pth
+
+# Python Cache and Environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.env
+
+# IDE and OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

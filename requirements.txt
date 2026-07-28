@@ -1,0 +1,10 @@
+tensorflow
+xarray
+pandas
+numpy
+scikit-learn
+dask
+matplotlib
+scipy
+tqdm
+geopandas
